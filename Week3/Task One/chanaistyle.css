@@ -48,3 +48,12 @@ html {
     font-size: 12px;
     padding: 15px;
 }
+/* For mobile phones: */
+[class*="col-"] {
+ width: 100%;
+}
+@media only screen and (min-width: 768px) {
+ /* For desktop: */
+ .col-3 {width: 25%;}
+ .col-6 {width: 50%;}
+}
