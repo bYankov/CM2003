@@ -1,0 +1,55 @@
+input[type=text] {
+    width: 70%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin: 0 15%;
+}
+
+.background{
+  background-image: url("https://dijitalkoleksiyon.files.wordpress.com/2012/09/credits-background.jpg");
+
+}
+* {
+    box-sizing: border-box;
+}
+.header {
+    text-align: center;
+    padding: 15px;
+    color: white;
+
+}
+.thumbnails {
+    width: 15%;
+    float: left;
+    padding: 15px;
+    margin-left: 1%;
+
+}
+.text{
+    width: 19%;
+    padding: 1px;
+    margin-left: 16%;
+    color: white;
+
+}
+.player {
+    height: 70%;
+    width: 60%;
+    float: right;
+    padding: 15px;
+    margin-right: 5%;
+
+}
+img {
+    width: 100%;
+    height: auto;
+}
