@@ -1,47 +1,58 @@
-<!DOCTYPE html>
-<html>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
-  <title>SearchVideos</title>
-<link rel = "stylesheet" href = "css/style.css" />
-<link rel = "stylesheet" href = "css/jquery.fancybox.css" />
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="js/script.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
+  <title>Home - Movie Trailers</title>
+    <link rel = "stylesheet" href = "css/style.css" />
+    <link rel = "stylesheet" href = "css/jquery.fancybox.css" />
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href = "https://fonts.googleapis.com/css?family=Kaushan+Script|Jim+Nightshade" rel = "stylesheet"> 
+    <script src = "js/script.js"></script>
+    <script src = "js/jquery.fancybox.pack.js"></script>
+
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+    <!--<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity = "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin = "anonymous">-->
 
 <script>
-$(document).ready(function(){
-  $(".fancybox").fancybox();
-});
+    $(document).ready(function(){
+    $(".fancybox").fancybox();
+    });
 </script>
 
 </head>
 
 <body>
-
-
-<!-- SEARCH -->
-<div id="container">
+ <!--SEARCH -->
+<div id = "container">
+  
+  <!-- Title -->
   <header>
-      <h1>Search<span>Vids</span></h1>
-      <p>Search youtube</p>
+      <a href = "index.html" class = "headerLink">
+      <h1 class = "headerClass">Welcome to Movie<span class = "spanClass">Trailers</span></h1>
+      </a>
   </header>
+  
+  <!-- The search bar and its functionality-->
   <section>
-    <form id = "search-form" name = "search-form" onsubmit="return search()">
+    <form id = "search-form" name = "search-form" onsubmit = "return search()">
       <div class = "fieldcontainer">
-        <input type ="search" id="query" class="search-field" placeholder = "Search youtube">
-          <input type="submit" name="search-btn" id="search-btn" value="">
-        </div>
-      </form>
+        <!--<label for = "search"> Search... </label>-->
+        <input type = "search" id = "query" class = "search-field" placeholder = "Search for a trailer...">
+          <input type = "submit" name = "search-btn" id = "search-btn" value="">
+      </div>
+    </form>
 
-      <ul id="results"></ul>
-      <div id ="buttons"></div>
-    </section>
+      <ul id = "results"></ul>
+      <div id = "buttons"></div>
+  </section>
+    
+    <!--A simple footer-->
     <footer>
-      <p> Copyright</p>
+      <p> Send feedback to: bozhidary@gmail.com</p>
     </footer>
-  </div>
+
+</div>
 
 </body>
 </html>
